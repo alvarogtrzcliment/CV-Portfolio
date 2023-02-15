@@ -1,0 +1,987 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Cutive Mono", sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+@media(max-width: 900px) {
+  body {
+    background: linear-gradient(90deg, #040007 0%, #000909 100%);
+    padding: 5%;
+    margin: 0%;
+    padding: 0%;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    font-size: 0.5rem;
+    text-decoration: none;
+    background-color: black;
+    box-shadow: 1px 10px 17px -12px #00ff91;
+  }
+  .Logo {
+    padding: 4%;
+    font-size: 1rem;
+  }
+  .Logo span {
+    font-size: 1rem;
+  }
+
+  header nav ul {
+    flex-grow: 2;
+    display: flex;
+    justify-content: end;
+  }
+  header nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 3%;
+  }
+  header nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    transition: 0.5s;
+  }
+  header nav a:hover {
+    color: #00ff80;
+    transition: 0.5s;
+  }
+
+  .Landing {
+    display: flex;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    margin: 3%;
+    filter: grayscale(50%);
+    transition: 0.5s;
+  }
+  .Landing:hover {
+    border-color: #00ff80;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    filter: grayscale(0%);
+    transition: 0.5s;
+  }
+  #TextoLanding {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+  #TextoLanding h1 {
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-family: "Share Tech Mono";
+  }
+  #TextoLanding h3 {
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding-top: 5px;
+  }
+  #TextoLanding p {
+    justify-content: center;
+    text-align: justify;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 8%;
+    padding-left: 0%;
+    padding-bottom: 8%;
+  }
+
+  .Boton_inicio {
+    background-color: #00ff91;
+    color: black;
+    padding: 5%;
+    border-radius: 15px;
+    font-family: "VT323";
+    transition: 0.5s;
+  }
+  .Boton_inicio:hover {
+    box-shadow: 0px 1px 8px 0px #00ff91;
+    color: #960078;
+    transform: translateY(-3px);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  #verde {
+    color: #00ff80;
+  }
+
+  #FotoLanding {
+    flex-basis: 50%;
+    background-image: url(Fotos/Foto\ CV.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #Experiencia {
+    display: flex;
+    margin: 3%;
+    flex-direction: column;
+    text-align: justify;
+    padding: 5%;
+    transition: 0.5s;
+  }
+
+  #Experiencia section {
+    border-style: solid;
+    margin-top: 3%;
+    display: flex;
+    filter: grayscale(50%);
+    transition: 0.5s;
+  }
+
+  #Experiencia section:hover {
+    border-color: #00ff80;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    filter: none;
+    transition: 0.5s;
+  }
+  #FotoSeccion1 {
+    flex-basis: 50%;
+    background-image: url(Fotos/FotoSeccion1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #FotoSeccion2 {
+    flex-basis: 50%;
+    background-image: url(Fotos/FotoSeccion2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #FotoSeccion3 {
+    flex-basis: 50%;
+    background-image: url(Fotos/FotoSeccion3.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #TextoSeccion1,
+  #TextoSeccion2,
+  #TextoSeccion3 {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Experiencia h2 {
+    font-size: 3rem;
+    text-align: end;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    border-color: #00ff91;
+    border-bottom-style: solid;
+    font-family: "Share Tech Mono";
+    margin-bottom: 2%;
+  }
+  #Experiencia h3 {
+    font-size: 1.5rem;
+    text-align: end;
+    color: #00ff80;
+    padding: 9%;
+    text-shadow: white;
+  }
+  #Experiencia h4 {
+    font-size: 1.3rem;
+    text-align: right;
+    padding: 9%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  #Experiencia p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    padding: 9%;
+    padding-top: 3%;
+  }
+
+  #Experiencia ul {
+    list-style: none;
+    transition: 0.5s;
+  }
+
+  #Educacion {
+    display: flex;
+    margin: 3%;
+    flex-direction: column;
+    text-align: justify;
+    padding: 5%;
+    transition: 0.5s;
+  }
+
+  #Educacion section {
+    border-style: solid;
+    margin-top: 3%;
+    display: flex;
+    filter: grayscale(50%);
+    transition: 0.5s;
+  }
+  #Educacion section:hover {
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    border-color: #00ff80;
+    filter: none;
+  }
+  #Educacion h2 {
+    font-size: 3rem;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    border-color: #00ff91;
+    border-bottom-style: solid;
+    font-family: "Share Tech Mono";
+    margin-bottom: 2%;
+  }
+  #Educacion h3 {
+    font-size: 1.5rem;
+    text-align: end;
+    color: #00ff80;
+    padding: 9%;
+    text-shadow: white;
+  }
+  #Educacion h4 {
+    font-size: 1.3rem;
+    text-align: right;
+    padding: 9%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  #Educacion p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    padding: 9%;
+    padding-top: 3%;
+  }
+
+  #Educacion ul {
+    list-style: none;
+    transition: 0.5s;
+  }
+  #FotoMaster {
+    background-image: url(Fotos/FotoMaster.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-basis: 50%;
+  }
+  #TextoMaster,
+  #TextoGrado {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #FotoGrado {
+    background-image: url(Fotos/FotoGrado.jpg);
+    flex-basis: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  .Boton_leer {
+    margin: 5%;
+    flex-basis: 100%;
+    background-color: #ffffff;
+    padding: 1%;
+    color: #000909;
+    font-family: "VT323";
+    border-radius: 25px;
+    transition: 0.5s;
+  }
+  .Boton_leer:hover {
+    background-color: #00ff80;
+    box-shadow: 0px 1px 8px 0px #ffffff;
+    border-color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  #Certificaciones {
+    display: flex;
+    margin: 3%;
+    flex-direction: column;
+    text-align: justify;
+    padding: 5%;
+    transition: 0.5s;
+  }
+  #Certificaciones h2 {
+    font-size: 2.5rem;
+    text-align: end;
+    margin: 2%;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    border-color: #00ff91;
+    border-bottom-style: solid;
+    font-family: "Share Tech Mono";
+    margin-bottom: 4%;
+  }
+
+  .Cert {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s;
+  }
+  .Cert:hover {
+    box-shadow: inset 10px 10px 84px -36px #00ff91;
+    border-color: #00ff91;
+    border-top-style: solid;
+    transition: 0.5s;
+  }
+  .Cert h3 {
+    color: #00ff80;
+    font-size: 1.3rem;
+  }
+  .Cert h4 {
+    font-size: 1.1rem;
+  }
+  .Cert h5 {
+    font-size: 1rem;
+    color: #00ff91;
+  }
+
+  .FotoCert {
+    padding: 2%;
+  }
+  .FotoCert img {
+    width: 30px;
+  }
+
+  #IdiomasIT {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+    justify-content: space-around;
+  }
+  #IdiomasIT h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 10%;
+  }
+  #IdiomasIT h3 {
+    font-size: 1.1rem;
+    color: #00ff80;
+  }
+  #IdiomasIT h4 {
+    font-style: italic;
+  }
+  .Idioma {
+    display: flex;
+    flex-direction: row;
+  }
+  .FotoIdioma {
+    padding: 3%;
+  }
+  .FotoIdioma img {
+    width: 35px;
+  }
+
+  .IIT {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 2%;
+    border-top-style: solid;
+    border-color: #00ff80;
+    box-shadow: inset 10px 10px 84px -36px #00ff91;
+    flex-basis: 30%;
+  }
+  .IdiomaText {
+    align-self: center;
+  }
+  .SkillIT {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .FotoIT {
+    padding: 3%;
+  }
+  .FotoIT img {
+    width: 35px;
+  }
+  .ITText {
+    align-self: center;
+  }
+  #Galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    flex-basis: 40%;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #00ff80;
+    filter: grayscale(50%);
+    transition: 0.5s;
+  }
+  .card:hover {
+    filter: none;
+    box-shadow: inset 10px 10px 84px -36px #00ff91;
+    transition: 0.5s;
+  }
+  .card img {
+    width: 80%;
+    align-self: center;
+    padding: 10%;
+  }
+  .card h3 {
+    font-size: 1.5rem;
+    padding: 4%;
+    color: #00ff80;
+  }
+  .card p {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .card button {
+    background-color: #00ff80;
+    padding: 5%;
+    margin: 5%;
+    border-radius: 25px;
+    color: #000909;
+    font-family: "VT323";
+    font-size: 1.1rem;
+  }
+  .card button:hover{
+    cursor: pointer;
+  }
+  #Portfolio h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin: 3%;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    border-color: #00ff91;
+    border-bottom-style: solid;
+    font-family: "Share Tech Mono";
+    margin-bottom: 2%;
+  }
+  #ContactoFoot {
+    box-shadow: inset 10px 10px 84px -36px #00ff91;
+  }
+  #ContactoFoot h2 {
+    font-size: 2.5rem;
+    padding: 5%;
+    padding-bottom: 1%;
+    padding-top: 3%;
+  }
+  #ContactoFoot ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 3%;
+    padding-top: 0%;
+  }
+  #ContactoFoot ul li a:hover {
+    color: #00ff80;
+    transition: 0.5s;
+  }
+  #ContactoFoot ul li:hover {
+    color: #00ff80;
+    transition: 0.5s;
+  }
+  #ContactoFoot ul li {
+    font-size: 1.5rem;
+  }
+  #ContactoFoot ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+
+@media(min-width: 600px) {
+  body {
+    background: linear-gradient(90deg, #040007 0%, #000909 100%);
+    padding: 5%;
+    margin: 0%;
+    padding: 0%;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0.2%;
+    font-size: 0.5rem;
+    text-decoration: none;
+    background-color: black;
+    box-shadow: 1px 10px 17px -12px #00ff91;
+  }
+  .Logo {
+    padding: 1%;
+    font-size: 1.4rem;
+  }
+  .Logo span {
+    font-size: 1.6rem;
+  }
+
+  header nav ul {
+    flex-grow: 2;
+    display: flex;
+    justify-content: end;
+  }
+  header nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 2%;
+  }
+  header nav a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    transition: 0.5s;
+  }
+  header nav a:hover {
+    color: #00ff80;
+    transition: 0.5s;
+  }
+
+  .Landing {
+    display: flex;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    margin: 3%;
+    filter: grayscale(50%);
+    transition: 0.5s;
+  }
+  .Landing:hover {
+    border-color: #00ff80;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    filter: grayscale(0%);
+    transition: 0.5s;
+  }
+  #TextoLanding {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+  }
+  #TextoLanding h1 {
+    justify-content: center;
+    font-size: 4rem;
+    color: #ffffff;
+  }
+  #TextoLanding h3 #verde {
+    font-size: 3rem;
+  }
+  #TextoLanding h3 {
+    justify-content: center;
+    font-size: 3rem;
+    color: #ffffff;
+    padding-top: 5px;
+    font-family: "Source Code Pro";
+  }
+  #TextoLanding p {
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 5%;
+    padding-left: 0%;
+    padding-bottom: 8%;
+  }
+
+  .Boton_inicio {
+    background-color: #00ff80;
+    color: black;
+    padding: 2%;
+    border-radius: 15px;
+    font-family: "VT323";
+    font-size: 2rem;
+    transition: 0.5s;
+  }
+  .Boton_inicio:hover {
+    box-shadow: 0px 1px 8px 0px #00ff91;
+    color: #960078;
+    transform: translateY(-3px);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  #verde {
+    color: #00ff80;
+  }
+
+  #FotoLanding {
+    flex-basis: 50%;
+    background-image: url(Fotos/Foto\ CV.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #Experiencia {
+    display: flex;
+    margin: 3%;
+    flex-direction: column;
+    text-align: justify;
+    padding: 5%;
+    transition: 0.5s;
+  }
+
+  #Experiencia section {
+    border-style: solid;
+    margin-top: 3%;
+    display: flex;
+    filter: grayscale(50%);
+    transition: 0.5s;
+  }
+
+  #Experiencia section:hover {
+    border-color: #00ff80;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    filter: none;
+    transition: 0.5s;
+  }
+  #FotoSeccion1 {
+    flex-basis: 50%;
+    background-image: url(Fotos/FotoSeccion1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #FotoSeccion2 {
+    flex-basis: 50%;
+    background-image: url(Fotos/FotoSeccion2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #FotoSeccion3 {
+    flex-basis: 50%;
+    background-image: url(Fotos/FotoSeccion3.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #TextoSeccion1,
+  #TextoSeccion2,
+  #TextoSeccion3 {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Experiencia h2 {
+    font-size: 5rem;
+    text-align: end;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    border-color: #00ff91;
+    border-bottom-style: solid;
+    font-family: "Share Tech Mono";
+    margin-bottom: 2%;
+  }
+
+  #Experiencia h3 {
+    font-size: 3.5rem;
+    text-align: end;
+    color: #00ff80;
+    padding: 4%;
+    text-shadow: white;
+  }
+  #Experiencia h4 {
+    font-size: 2rem;
+    text-align: justify;
+    padding: 7%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+  #Experiencia p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    padding: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  #Experiencia ul {
+    list-style: none;
+    transition: 0.5s;
+  }
+  #Experiencia li {
+    font-size: 1.3rem;
+  }
+
+  #Educacion {
+    display: flex;
+    margin: 3%;
+    flex-direction: column;
+    text-align: justify;
+    padding: 5%;
+    padding-top: 0%;
+    transition: 0.5s;
+  }
+
+  #Educacion section {
+    border-style: solid;
+    margin-top: 3%;
+    display: flex;
+    filter: grayscale(50%);
+    transition: 0.5s;
+  }
+  #Educacion section:hover {
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    border-color: #00ff80;
+    filter: none;
+  }
+  #Educacion h2 {
+    font-size: 5rem;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    border-color: #00ff91;
+    border-bottom-style: solid;
+    font-family: "Share Tech Mono";
+    margin-bottom: 2%;
+  }
+  #Educacion h3 {
+    font-size: 3.5rem;
+    text-align: left;
+    color: #00ff80;
+    padding: 5%;
+    padding-bottom: 2%;
+    text-shadow: white;
+  }
+  #Educacion h4 {
+    font-size: 2rem;
+    text-align: justify;
+    padding: 9%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+  #Educacion ul {
+    list-style: none;
+    transition: 0.5s;
+  }
+  #Educacion li {
+    font-size: 1.3rem;
+  }
+  #Educacion li i,
+  a {
+    font-size: 1.3rem;
+  }
+  #Educacion li a {
+    color: #00ff80;
+  }
+
+  #FotoMaster {
+    background-image: url(Fotos/FotoMaster.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-basis: 50%;
+  }
+  #TextoMaster,
+  #TextoGrado {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #FotoGrado {
+    background-image: url(Fotos/FotoGrado.jpg);
+    flex-basis: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  .Boton_leer {
+    margin: 3%;
+    flex-basis: 100%;
+    background-color: #ffffff;
+    padding: 1%;
+    color: #000909;
+    border-radius: 25px;
+    transition: 0.5s;
+    font-family: "VT323";
+    font-size: 2rem;
+  }
+  .Boton_leer:hover {
+    background-color: #00ff80;
+    box-shadow: 0px 1px 8px 0px #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  #Certificaciones {
+    display: flex;
+    margin: 3%;
+    margin-bottom: 0%;
+    padding-bottom: 1%;
+    flex-direction: column;
+    text-align: justify;
+    padding: 5%;
+    transition: 0.5s;
+  }
+  #Certificaciones h2 {
+    font-size: 5rem;
+    text-align: end;
+    margin: 2%;
+    box-shadow: 0px 12px 27px -11px #00ff91;
+    border-color: #00ff91;
+    border-bottom-style: solid;
+    font-family: "Share Tech Mono";
+    margin-bottom: 2%;
+  }
+
+  .Cert {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s;
+  }
+  .Cert:hover {
+    box-shadow: inset 10px 10px 84px -36px #00ff91;
+    border-color: #00ff91;
+    border-top-style: solid;
+    transition: 0.5s;
+  }
+  .Cert h3 {
+    color: #00ff80;
+    font-size: 3rem;
+  }
+  .Cert h4 i {
+    font-size: 2.3rem;
+  }
+  .Cert h5 {
+    font-size: 2rem;
+    color: #00ff91;
+  }
+
+  .FotoCert {
+    padding: 2%;
+  }
+  .FotoCert img {
+    width: 60px;
+  }
+
+  #IdiomasIT {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+    justify-content: space-around;
+  }
+  #IdiomasIT h2 {
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 10%;
+    font-family: "Share Tech Mono";
+  }
+  #IdiomasIT h3 {
+    font-size: 2rem;
+    color: #00ff80;
+  }
+  #IdiomasIT h4 {
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+  .Idioma {
+    display: flex;
+    flex-direction: row;
+  }
+  .FotoIdioma {
+    padding: 3%;
+  }
+  .FotoIdioma img {
+    width: 35px;
+  }
+
+  .IIT {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 2%;
+    border-top-style: solid;
+    border-color: #00ff80;
+    box-shadow: inset 10px 10px 84px -36px #00ff91;
+    flex-basis: 30%;
+  }
+  .IdiomaText {
+    align-self: center;
+  }
+  .SkillIT {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .FotoIT {
+    padding: 3%;
+  }
+  .FotoIT img {
+    width: 35px;
+  }
+  .ITText {
+    align-self: center;
+  }
+  #Galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    margin: 4%;
+    flex-basis: 40%;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #00ff80;
+    filter: grayscale(50%);
+    transition: 0.5s;
+  }
+  .card:hover {
+    filter: none;
+    box-shadow: inset 10px 10px 84px -36px #00ff91;
+    transition: 0.5s;
+  }
+  .card img {
+    width: 80%;
+    align-self: center;
+    padding: 10%;
+  }
+  .card h3 {
+    font-size: 3rem;
+    padding: 4%;
+    color: #00ff80;
+  }
+  .card p {
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 1.5rem;
+  }
+
+  .card button {
+    background-color: #00ff80;
+    padding: 5%;
+    margin: 5%;
+    border-radius: 25px;
+    font-family: "Share Tech Mono";
+    color: #000909;
+    font-size: 1.1rem;
+  }
+  .card button:hover{
+    cursor: pointer;
+  }
+  #Portfolio h2 {
+    text-align: left;
+    font-size: 5rem;
+    margin: 3%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-color: #00ff91;
+    border-bottom-style: solid;
+    font-family: "Share Tech Mono";
+    margin-bottom: 2%;
+    box-shadow: 0px 23px 33px -27px rgba(0, 255, 136, 1);
+  }
+}
